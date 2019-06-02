@@ -3,16 +3,24 @@
 public class KMeansVector2 : MonoBehaviour {
 
     public bool showClustered = true;
+
     public int sampleSize = 50;
     public int spaceSize = 5;
+
+    [Range(1, 50)]
     public int clustersCount = 3;
+
+    [Range(10, 50)]
     public int iterations = 100;
 
     private KMeansResults result;
     private Vector2[] data;
 
     private void Start() {
+        getData();
+    }
 
+    public void getData() {
         data = new Vector2[sampleSize];
 
         for (int i = 0; i < data.Length; i++) {
@@ -21,6 +29,10 @@ public class KMeansVector2 : MonoBehaviour {
             data[i] = new Vector2(x, y) * spaceSize;
         }
 
+        compute();
+    }
+
+    public void compute() {
         result = KMeans.Cluster(data, clustersCount, iterations, 0);
     }
 

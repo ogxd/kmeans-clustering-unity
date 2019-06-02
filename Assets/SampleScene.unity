@@ -220,13 +220,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 955150392}
+  - component: {fileID: 955150393}
   m_Layer: 0
   m_Name: KMeansVector3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &955150392
 Transform:
   m_ObjectHideFlags: 0
@@ -241,6 +242,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &955150393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 955150391}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d32a291bd8e3ab4caeb739d810afd90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  showClustered: 1
+  sampleSize: 50
+  spaceSize: 5
+  clustersCount: 3
+  iterations: 100
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -333,13 +351,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1169872291}
+  - component: {fileID: 1169872292}
   m_Layer: 0
-  m_Name: KMeansVector2 (2)
+  m_Name: KMeansBounds
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1169872291
 Transform:
   m_ObjectHideFlags: 0
@@ -354,6 +373,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1169872292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1169872290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc553eecfc9b2f34d803f3df18642c26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  showClustered: 1
+  sampleSize: 50
+  spaceSize: 5
+  clustersCount: 3
+  iterations: 100
+  boxMaxSize: 2.56
 --- !u!1 &2074730276
 GameObject:
   m_ObjectHideFlags: 0
@@ -363,6 +400,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2074730277}
+  - component: {fileID: 2074730278}
   m_Layer: 0
   m_Name: KMeansVector2
   m_TagString: Untagged
@@ -384,3 +422,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2074730278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2074730276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a378e20ec166c342b6e0a2456bada87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  showClustered: 1
+  sampleSize: 355
+  spaceSize: 5
+  clustersCount: 37
+  iterations: 71
